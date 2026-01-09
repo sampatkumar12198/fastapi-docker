@@ -12,4 +12,4 @@ def health():
 
 @app.get('/test')
 def hellow():
-    return {'message':'Hellow World!..'}
+    return {'message':'Hellow World!..New text'}
