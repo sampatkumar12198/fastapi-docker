@@ -1,0 +1,61 @@
+Most Used Docker Commands
+ 1. Images
+	docker images                 # list images
+	docker pull ubuntu             # download image
+	docker rmi image_id            # delete image
+	
+ 2. Containers
+	docker ps                      # running containers
+	docker ps -a                   # all containers
+	docker run ubuntu               # run container
+	docker run -it ubuntu /bin/bash # interactive
+	docker stop container_id
+	docker start container_id
+	docker rm container_id
+	
+	
+	Run these commands in order: In case when i found error after run docker-compose up
+	docker-compose down
+	docker image prune -f
+	docker-compose build --no-cache
+	docker-compose up
+	
+	above commands do as:
+	Stop container (docker-compose down)
+
+	Remove old image (docker image prune -f)
+
+	Rebuild image with correct CMD (docker-compose build --no-cache)
+
+	Start fresh container (docker-compose up)
+	
+	
+	
+	Which option should YOU use?
+	Scenario	               Command
+	Normal development	       docker-compose up
+	Want background service	   docker-compose up -d
+	Just stopped container	   docker start fastapi_app
+	Code/Dockerfile changed	   docker-compose up --build
+	
+	
+	
+	
+	How to stop properly (future)
+	Foreground
+	Ctrl + C
+
+	Background container
+	docker-compose down
+
+	Verify app is running
+	docker ps
+
+
+	Then open:
+
+	http://localhost:8000
+
+	
+ 
+
