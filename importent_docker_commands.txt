@@ -55,6 +55,34 @@ Most Used Docker Commands
 	Then open:
 
 	http://localhost:8000
+	
+	
+	GIT REPO
+	
+	Step 1: Initialize Git repo
+
+	Inside your project folder:
+
+	git init
+	git add .
+	git commit -m "Initial FastAPI Docker setup"
+
+
+	Create a GitHub repo and push:
+
+	git branch -M main
+	git remote add origin https://github.com/sampatkumar12198/fastapi-docker.git
+	git push -u origin main
+	
+	
+	
+	echo "# fastapi-docker" >> README.md
+	git init
+	git add README.md
+	git commit -m "first commit"
+	git branch -M main
+	git remote add origin https://github.com/sampatkumar12198/fastapi-docker.git
+	git push -u origin main
 
 	
  
